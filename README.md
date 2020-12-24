@@ -1,5 +1,7 @@
 # 이청연/개발 수다방@Discord, 음잘소.
 
+마음만큼은 따뜻한 연말, 크리스마스를 맞이하여 전국의 아마추어 개발자들이 모여 언택트 개발자 모임 "음 뭐라고 해야 제목을 잘 지었다고 소문이 날까"를 가지려 합니다.
+
 > ✨ Bootstrapped with Create Snowpack App (CSA) and Coded with Atom-Editor.
 
 ## Table of Contents
