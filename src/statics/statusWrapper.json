@@ -1,0 +1,14 @@
+{
+  "idle": {
+    "borderColor": "white",
+    "bg": "yellow.500"
+  },
+  "online": {
+    "borderColor": "black",
+    "bg": "green.500"
+  },
+  "dnd": {
+    "borderColor": "black",
+    "bg": "red.500"
+  }
+}
