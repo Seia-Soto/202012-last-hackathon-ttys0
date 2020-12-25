@@ -59,9 +59,7 @@ const DiscordWidget = props => {
             const prop = member.game[gameProps[i]]
 
             for (let k = 0, s = possibleExts.length; k < s; k++) {
-              const exp = new RegExp(possibleExts[k].replace(/[.+]/g, '\\$1'), 'im')
-
-              if (prop.match(exp)) return true
+              if (prop.includes(possibleExts[k])) return true
             }
           }
 
