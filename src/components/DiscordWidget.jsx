@@ -28,7 +28,7 @@ const DiscordWidget = props => {
   const [devs, setDevs] = useState([])
 
   useEffect(() => {
-    const url = 'https://discordapp.com/api/guilds/784827324054110228/widget.json'
+    const url = '/api/getWidget'
 
     fetch(url)
       .then(res => res.json())
@@ -58,10 +58,8 @@ const DiscordWidget = props => {
           for (let i = 0, l = gameProps.length; i < l; i++) {
             const prop = member.game[gameProps[i]]
 
-            if (!prop.includes('.')) return false
-
             for (let k = 0, s = possibleExts.length; k < s; k++) {
-              const exp = new RegExp(possibleExts[k], 'im')
+              const exp = new RegExp(possibleExts[k].replace(/[.+]/g, '\\$1'), 'im')
 
               if (prop.match(exp)) return true
             }
